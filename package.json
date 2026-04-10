@@ -1,0 +1,36 @@
+{
+  "name": "pi-session-manager",
+  "version": "0.1.0",
+  "description": "Session browser for pi coding agent — browse, resume, rename, and delete sessions",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "pi",
+    "sessions"
+  ],
+  "homepage": "https://github.com/kowsari/pi-session-manager#readme",
+  "bugs": {
+    "url": "https://github.com/kowsari/pi-session-manager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kowsari/pi-session-manager.git"
+  },
+  "license": "MIT",
+  "author": "kowsari",
+  "files": [
+    "extensions/",
+    "package.json",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/session-manager.ts"
+    ]
+  }
+}
