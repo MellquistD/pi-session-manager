@@ -9,16 +9,16 @@
     "pi",
     "sessions"
   ],
-  "homepage": "https://github.com/kowsari/pi-session-manager#readme",
+  "homepage": "https://github.com/vahidkowsari/pi-session-manager#readme",
   "bugs": {
-    "url": "https://github.com/kowsari/pi-session-manager/issues"
+    "url": "https://github.com/vahidkowsari/pi-session-manager/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kowsari/pi-session-manager.git"
+    "url": "git+https://github.com/vahidkowsari/pi-session-manager.git"
   },
   "license": "MIT",
-  "author": "kowsari",
+  "author": "vahidkowsari",
   "files": [
     "extensions/",
     "package.json",
