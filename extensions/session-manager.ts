@@ -92,11 +92,12 @@ async function browse(pi: ExtensionAPI, ctx: ExtensionCommandContext, showAll: b
 				ctx.ui.notify("Already in this session.", "info");
 				return;
 			}
-			const res = await ctx.switchSession(r.s!.path);
-			if (!res.cancelled) {
-				const name = ctx.sessionManager.getSessionName();
-				ctx.ui.setStatus("sm", name ? ctx.ui.theme.fg("accent", `📁 ${name}`) : undefined);
-			}
+			await ctx.switchSession(r.s!.path, {
+				withSession: (newCtx) => {
+					const name = newCtx.sessionManager.getSessionName();
+					newCtx.ui.setStatus("sm", name ? newCtx.ui.theme.fg("accent", `📁 ${name}`) : undefined);
+				},
+			});
 			return;
 		}
 
